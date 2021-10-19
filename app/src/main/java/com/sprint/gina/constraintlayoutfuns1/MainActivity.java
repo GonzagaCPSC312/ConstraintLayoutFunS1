@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View v) {
-        Button b = (Button) v;
+//        Button b = (Button) v;
 //        String text = b.getText().toString();
-        String text = b.getTag().toString();
+        String text = v.getTag().toString();
         Log.d(TAG, "onButtonClick: " + text);
         // task: show a toast!!
         Toast.makeText(this, "Hello from, " + text, Toast.LENGTH_LONG).show();
